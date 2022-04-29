@@ -23,7 +23,7 @@ func (a *App) InitializeRoutes() {
 
 	err := godotenv.Load()
 	if err != nil {
-		panic(err)
+		log.Printf("godotenv cant find .env file")
 	}
 
 	db, err := pgxpool.Connect(context.Background(), os.Getenv("DATABASE_URL"))
