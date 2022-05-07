@@ -7,5 +7,4 @@ import (
 )
 
 func Test(db *pgxpool.Pool, w http.ResponseWriter, r *http.Request) {
-
 }
